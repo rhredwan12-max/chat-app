@@ -1,0 +1,5 @@
+# QA Notes
+
+The portrait preview was checked at 390x844 for Conversations, Chat, Settings, Security Center, New conversation, New group, and Attachments. The main Conversations tab renders with the intended midnight/cyan visual system, readable rows, search field, unread badges, floating compose action, and working Chats/Settings navigation. The Chat screen renders message bubbles, lock banner, delivery/read marks, attachment action, composer, and send interaction. Settings and Security Center render privacy toggles and explanatory security states. New conversation, New group, and Attachments routes render without visible layout failures.
+
+The root path screenshot did not capture, but the canonical tabs path `/(tabs)` captured successfully. TypeScript and LSP checks reported no errors after routes were added and the server restarted. This prototype currently uses local deterministic sample data and does not claim production network E2EE until an audited backend protocol is implemented.
